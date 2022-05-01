@@ -23,15 +23,14 @@ const LineChart = ({coinHistory, currentPrice, coinName}) => {
 
     coinHistory?.data?.history.forEach(data => {
         coinPrice.push(data.price);
-        coinTimeStamp.push(new Date(data.timestamp).toLocaleDateString());
+        coinTimeStamp.push(new Date(data.timestamp * 1000).toLocaleDateString());
     })
-
     const data = {
-        labels: coinTimeStamp,
+        labels: coinTimeStamp.reverse(),
         datasets: [
             {
                 label: 'Price in USD',
-                data: coinPrice,
+                data: coinPrice.reverse(),
                 fill: false,
                 backgroundColor: '#f9ba48',
                 borderColor: '#f9ba48'
@@ -44,7 +43,7 @@ const LineChart = ({coinHistory, currentPrice, coinName}) => {
             yAxes: [
                 {
                     ticks: {
-                        beginAtZero: true
+                        beginAtZero: true,
                     }
                 }
             ]
