@@ -22,7 +22,7 @@ From my end, I worked on improving the overall look and feel of the web app.
 ## News
 ![News Page](https://user-images.githubusercontent.com/30632603/166135524-3e6eb86a-4548-4129-a7e9-d571519edafb.png)
 
-##CryptoDetails Page 
+## CryptoDetails Page 
 
 ![CryptoDetails Page 1](https://user-images.githubusercontent.com/30632603/166135521-0a1bb95d-9eff-4dea-9401-b660e27223bd.png)
 ![CryptoDetails Page 2](https://user-images.githubusercontent.com/30632603/166135522-26c22733-cde3-427a-813e-329d60593717.png)
